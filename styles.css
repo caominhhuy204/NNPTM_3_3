@@ -1,0 +1,48 @@
+.table td, .table th { vertical-align: middle; }
+
+.thumb {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: .5rem;
+  border: 1px solid rgba(0,0,0,.1);
+  background: rgba(0,0,0,.03);
+}
+
+.sort-btn {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  line-height: 1;
+  cursor: pointer;
+}
+.sort-indicator {
+  font-size: .85rem;
+  opacity: .7;
+  margin-left: .25rem;
+}
+
+.title-clamp {
+  max-width: 360px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+tr.hover-row { position: relative; }
+
+.desc-popover {
+  position: absolute;
+  z-index: 10;
+  display: none;
+  max-width: 520px;
+  white-space: normal;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: .5rem;
+  box-shadow: 0 .5rem 1.25rem rgba(0,0,0,.12);
+  background: #fff;
+  padding: .75rem .9rem;
+}
+
+tr.hover-row:hover .desc-popover { display: block; }
